@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Prody</h2>
+      <ul>
+        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#"> Analytics</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#"> Extensions</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Dashboard Overview</h1>
+        <div class="date-time" id="date-time"></div>
+      </header>
+
+      <!-- Cards Section -->
+      <section class="cards">
+        <div class="card">
+          <h3>Total Users</h3>
+          <p id="total-users">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Active Sessions</h3>
+          <p id="active-sessions">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Server Status</h3>
+          <p class="status" id="server-status">Loading...</p>
+        </div>
+      </section>
+
+      <!-- Charts Section -->
+      <section class="charts">
+        <div class="chart-container">
+          <canvas id="line-chart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="bar-chart"></canvas>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
